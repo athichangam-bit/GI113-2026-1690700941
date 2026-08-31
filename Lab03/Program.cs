@@ -24,6 +24,8 @@
             double currentHpDouble = currentHp; // Int ->> Double แปลงแบบไม่ Cast ใส่ค่าได้เลย
             Console.WriteLine($"HP (double): {currentHpDouble}");
 
+            //ทำ
+
             //ทำ Explicit โดยการ Casting (float) AttackPower ->> Int
             Console.WriteLine("\n----- Explicit Cast: Attack Power -> Display Int -----");
             int attackInt = (int)attackPower;  // แปลงข้อมูลโดยการ Cast Syntax: (ชนิดที่ต้องการแปลง)ชื่อตัวแปรที่อยากแปลง
