@@ -2,7 +2,7 @@
 * Student ID : 1690700941
 * Name       : อธิชา งามงอน
 * Section    : 129A
-* No.        : 
+* No.        : 33
 * Course     : GI113 Computer Programming (GI)
 */
 namespace Lab06
