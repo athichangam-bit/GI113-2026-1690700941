@@ -5,6 +5,8 @@
 * No.        : 
 * Course     : GI113 Computer Programming (GI)
 */
+using System.ComponentModel.Design;
+
 namespace Lab06
 {
     internal class Program
@@ -86,46 +88,6 @@ namespace Lab06
             Console.WriteLine("||  ACTION 3: Wishful Embrace  ||");
             Console.WriteLine("||  ACTION 4: Dreamfall        ||");
             Console.WriteLine("+===============================+");
-            Console.WriteLine();
-
-            int monHp = 130;
-            int atk = 25;
-            int sleep = 0;
-            int charHp = 100;
-            int healHp = 20;
-            int ult = 75;
-
-            Console.Write("Choose your action: ");
-            bool inputOk = int.TryParse(Console.ReadLine(), out int choice);
-
-            if (!inputOk || choice < 1 || choice > 4)
-            {
-                Console.WriteLine("Invalid input, Please choose between 1-4");
-            }
-            else if (choice == 1)
-            {
-                monHp -= atk;
-                Console.WriteLine("You used Starlit Stitch attack the Drabby!");
-            }
-            else if (choice == 2)
-            {
-                monHp -= sleep;
-                Console.WriteLine("You used Moonlit Lullaby the moonlight lulled the Drabby to sleep!");
-            }
-            else if (choice == 3)
-            {
-                charHp += healHp;
-                Console.WriteLine("You used Wishful Embrace Threads stitched your wounds back together!");
-            }
-            else if (choice == 4)
-            {
-                monHp -= ult;
-                Console.WriteLine("You used Dreamfall the Ultimate dream power descends upon Drabby!");
-            }
-            else
-            {
-                Console.WriteLine("THREAD BROKEN: Your thread has been unraveled...");
-            }
         }
     }
 }
