@@ -102,6 +102,7 @@ namespace Lab06
             {
                 Console.WriteLine("Invalid input, Please choose between 1-4");
             }
+
             else if (choice == 1)
             {
                 monHp -= atk;
